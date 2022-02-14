@@ -1,5 +1,5 @@
 #include<stdio.h>
-void input(int *a,int *b,int *c)
+int input(int *a,int *b,int *c)
 {
   printf("enter the first number:");
   scanf("%d",a);
@@ -8,7 +8,7 @@ void input(int *a,int *b,int *c)
   printf("enter the third number:");
   scanf("%d",c);
 }
-void cmp(int a,int b,int c,int *large)
+int cmp(int a,int b,int c,int *large)
 {
   if(a>b)
   {
@@ -16,7 +16,7 @@ void cmp(int a,int b,int c,int *large)
     {
       *large = a;
     }
-    else
+     else
     {
       *large = c;
     }
